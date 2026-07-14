@@ -30,7 +30,7 @@ st.caption("A GenAI Portfolio Project demonstrating Automated Requirements Elabo
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.metric(label="Connected LLM Engine", value="Gemini 2.5 Flash" if gemini_key else "Not Connected")
+    st.metric(label="Connected LLM Engine", value="Gemini 3.5 Flash" if gemini_key else "Not Connected")
 with col2:
     st.metric(label="API Status", value="Live Dynamic" if gemini_key else "Demo Mode Only")
 with col3:
@@ -79,15 +79,15 @@ with right_col:
                         f"Part 2: Provide clear Acceptance Criteria formatted explicitly as '{criteria_format}' format."
                     )
                     
-                    # Run the dynamic call to the LLM
-                 response = client.models.generate_content(
-                model='gemini-3.5-flash',  # <-- Updated to the latest model here!
-                contents=raw_requirement,
-                config=types.GenerateContentConfig(
-                system_instruction=system_prompt,
-                temperature=0.2
-                )
-            )
+                    # Run the dynamic call to the LLM (Indentation Fixed)
+                    response = client.models.generate_content(
+                        model='gemini-3.5-flash',
+                        contents=raw_requirement,
+                        config=types.GenerateContentConfig(
+                            system_instruction=system_prompt,
+                            temperature=0.2
+                        )
+                    )
                     
                     # Parse out the response parts visually 
                     output_text = response.text
