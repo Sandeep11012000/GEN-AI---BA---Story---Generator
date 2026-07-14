@@ -80,14 +80,14 @@ with right_col:
                     )
                     
                     # Run the dynamic call to the LLM
-                    response = client.models.generate_content(
-                        model='gemini-2.5-flash',
-                        contents=raw_requirement,
-                        config=types.GenerateContentConfig(
-                            system_instruction=system_prompt,
-                            temperature=0.2
-                        )
-                    )
+                 response = client.models.generate_content(
+                model='gemini-3.5-flash',  # <-- Updated to the latest model here!
+                contents=raw_requirement,
+                config=types.GenerateContentConfig(
+                system_instruction=system_prompt,
+                temperature=0.2
+                )
+            )
                     
                     # Parse out the response parts visually 
                     output_text = response.text
