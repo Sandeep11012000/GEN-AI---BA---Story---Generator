@@ -22,4 +22,8 @@ This project bridges that operational gap by combining a **Python (Streamlit)** 
 * Design Modular Software Systems: Utilizing isolated client configurations, session management variables, and responsive split-column visual layouts.
 * Enforce Structural Governance: Restricting generative flexibility through deterministic variables to produce standardized business data packages.
 
+UI Screen:
+
+<img width="1897" height="797" alt="Image_4" src="https://github.com/user-attachments/assets/4230e9ee-d837-4fdf-9882-8dd433327475" />
+
 
