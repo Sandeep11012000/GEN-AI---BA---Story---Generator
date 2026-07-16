@@ -1,2 +1,19 @@
 # GEN-AI---BA---Story---Generator
 A lightweight web application where a user uploads a text snippet or document of a business requirement, and a Large Language Model (LLM) instantly generates structured User Stories, Acceptance Criteria (in Given-When-Then / Gherkin format), and a draft functional testing plan.
+
+## 📺 Project Walkthrough & Technical Demo
+
+*A complete system overview and live generation walkthrough demonstrating dynamic prompt engineering and model execution.*
+https://github.com/user-attachments/assets/45be5f73-10a8-4be1-b162-a6f95375ff8c
+
+## 🎯 Executive Summary & Problem Statement
+In traditional software development, translating vague stakeholder feedback, emails, or meeting notes into structured, developer-ready user stories is a highly manual, error-prone bottleneck. 
+
+This project bridges that operational gap by combining a **Python (Streamlit)** frontend UI layer with the **Google Gemini 3.5 Flash** large language model. By injecting highly engineered system prompts and enforcing low-temperature inference, this tool programmatically guarantees standardized backlog formatting in seconds.
+
+### 🌟 Key Product Capabilities:
+* **Dynamic Framework Adaptability:** Switches instantly between standard Agile User Stories (`As a... I want to... So that...`) and Outcome-driven Job Stories (`When... I want to... So I can...`).
+* **BDD Automation:** Generates syntax-perfect Gherkin acceptance criteria (`Given-When-Then`) ready for automated testing suites (Cucumber/Behave).
+* **Deterministic Formatting:** Restricts LLM behavioral randomness through precise context parameterization.
+
+
