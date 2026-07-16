@@ -1,0 +1,25 @@
+⚙️ Technical Architecture
+ [Messy Text Input] ──> [Streamlit Engine] ──(Injects System Context)──> [Gemini API]
+                                                                             │
+ [Ready Agile Backlog] <── [Markdown Renderer] ◄──(Returns Struct JSON)◄─────┘
+
+Environment Preparation & Dependency Installation:
+Open your terminal or command prompt application and run the following commands sequentially to download the codebase and install the required library infrastructure.
+1. Clone the repository from GitHub
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+
+2. Navigate directly into your project root directory
+cd your-repo-name
+
+3. Install the Core Streamlit Framework and Official Google GenAI SDK
+pip install streamlit google-genai
+
+To allow the backend engine to communicate with the model cluster, configure a secure developer key:
+
+* Navigate to Google AI Studio.
+* Authenticate with a standard Google account.
+* Click Get API Key in the sidebar panel.
+* Click Create API Key, copy the generated alphanumeric token string, and keep it safe.
+
+4. Fire up the application server framework on your local machine using this command:
+    python -m streamlit run app.py
